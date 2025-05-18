@@ -1,7 +1,11 @@
-export default function Login() {
+import { LoginForm } from "@/components/login-form"
+
+export default function LoginPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-       <h2 className="text-2xl/7 sm:text-3xl sm:tracking-tight font-bold">Login</h2>
+    <div className="bg-muted flex min-h-svh flex-col items-center justify-center p-6 md:p-10">
+      <div className="w-full max-w-sm md:max-w-3xl">
+        <LoginForm />
+      </div>
     </div>
-  );
+  )
 }
